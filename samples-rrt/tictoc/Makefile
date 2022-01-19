@@ -31,6 +31,9 @@ O = $(PROJECT_OUTPUT_DIR)/$(CONFIGNAME)/$(PROJECTRELATIVE_PATH)
 
 # Object files for local .cc, .msg and .sm files
 OBJS = \
+    $O/fifo.o \
+    $O/fuente.o \
+    $O/nodo.o \
     $O/txc1.o \
     $O/txc10.o \
     $O/txc11.o \
@@ -49,6 +52,7 @@ OBJS = \
     $O/txc7.o \
     $O/txc8.o \
     $O/txc9.o \
+    $O/myPacket_m.o \
     $O/tictoc13_m.o \
     $O/tictoc14_m.o \
     $O/tictoc15_m.o \
@@ -58,6 +62,7 @@ OBJS = \
 
 # Message files
 MSGFILES = \
+    myPacket.msg \
     tictoc13.msg \
     tictoc14.msg \
     tictoc15.msg \
